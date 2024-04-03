@@ -9,6 +9,7 @@ var manageRouter = require('./routes/manage');
 
 var app = express();
 app.use(cors());
+app.use('/', indexRouter);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
